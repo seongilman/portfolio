@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head th:replace="layout/head :: common_header(~{::title})">
+        <title>메인 타이틀</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <div th:replace="~{layout/navigation :: navigation}"></div>
+            <!-- Header-->
+            <div th:replace="~{home/profile :: profile}"></div>
+            <!-- About Section-->
+            <div th:replace="~{home/about :: about}"></div>
+        </main>
+        <!-- Footer-->
+        <div th:replace="~{layout/footer :: footer}"></div>
+    </body>
+</html>
